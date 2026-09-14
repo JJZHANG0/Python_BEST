@@ -2876,11 +2876,7 @@ REST_FRAMEWORK = {
     quiz: [
       {
         id: 'q8-1',
-        question: '编写函数 `generate_token(length)`，生成指定长度的随机 Token，由大小写字母和数字组成。
-
-**参数：** length (int) - Token 长度
-**返回：** str - 随机生成的 Token
-**示例：** generate_token(32) → 返回32位随机字符串',
+                question: '编写函数 `generate_token(length)`，生成指定长度的随机 Token，由大小写字母和数字组成。\n\n**参数：** length (int) - Token 长度\n\n**返回：** str - 随机生成的 Token\n\n**示例：** generate_token(32) → 返回32位随机字符串',
         hint: '使用 random.choices 和 string 模块',
         starterCode: '',
         testCases: [
@@ -2893,11 +2889,7 @@ REST_FRAMEWORK = {
       },
       {
         id: 'q8-2',
-        question: '编写函数 `check_permission(user_role, required_role)`，检查用户角色是否满足所需权限。优先级：admin > editor > user。
-
-**参数：** user_role (str) - 用户角色，required_role (str) - 所需角色
-**返回：** bool - 用户权限足够返回 True
-**示例：** check_permission(\"admin\", \"editor\") → True',
+                question: '编写函数 `check_permission(user_role, required_role)`，检查用户角色是否满足所需权限。优先级：admin > editor > user。\n\n**参数：** user_role (str) - 用户角色，required_role (str) - 所需角色\n\n**返回：** bool - 用户权限足够返回 True\n\n**示例：** check_permission(\"admin\", \"editor\") → True',
         hint: '使用字典映射优先级',
         starterCode: '',
         testCases: [
@@ -2933,11 +2925,7 @@ REST_FRAMEWORK = {
       },
       {
         id: 'q8-4',
-        question: '编写函数 `check_rate_limit(requests_count, limit, window)`，检查请求是否超过速率限制。
-
-**参数：** requests_count (int) - 已发送请求数，limit (int) - 限制数，window (str) - 时间窗口（可忽略）
-**返回：** bool - 未超限返回 True，超限返回 False
-**示例：** check_rate_limit(50, 100, \"hour\") → True',
+                question: '编写函数 `check_rate_limit(requests_count, limit, window)`，检查请求是否超过速率限制。\n\n**参数：** requests_count (int) - 已发送请求数，limit (int) - 限制数，window (str) - 时间窗口（可忽略）\n\n**返回：** bool - 未超限返回 True，超限返回 False\n\n**示例：** check_rate_limit(50, 100, \"hour\") → True',
         hint: '比较 requests_count 和 limit',
         starterCode: '',
         testCases: [
