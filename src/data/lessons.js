@@ -218,100 +218,90 @@ if 3 in [1, 2, 3, 4]:
     quiz: [
       {
         id: 'q1-1',
-        question: '编写函数 sum_even_numbers(n)，返回 1 到 n 之间所有偶数的和。',
-        hint: '使用 range() 和条件判断',
-        starterCode: 'def sum_even_numbers(n):\n    # 你的代码\n    pass\n',
+        question: '编写函数 get_list_length(my_list)，返回列表的长度。',
+        hint: '使用 len() 函数',
+        starterCode: 'def get_list_length(my_list):\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'result = sum_even_numbers(10)\nprint(result)',
-            expected: '30',
+            code: 'result = get_list_length([1, 2, 3, 4, 5])\nprint(result)',
+            expected: '5',
             hidden: false
           },
           {
-            code: 'result = sum_even_numbers(5)\nprint(result)',
-            expected: '6',
-            hidden: false
-          },
-          {
-            code: 'result = sum_even_numbers(20)\nprint(result)',
-            expected: '110',
-            hidden: true
-          },
-          {
-            code: 'result = sum_even_numbers(1)\nprint(result)',
-            expected: '0',
+            code: 'result = get_list_length([10, 20])\nprint(result)',
+            expected: '2',
             hidden: true
           }
         ]
       },
       {
         id: 'q1-2',
-        question: '编写函数 reverse_words(text)，反转句子中每个单词的字母顺序，但保持单词的位置不变。例如："hello world" → "olleh dlrow"',
-        hint: '使用 split()、字符串切片 [::-1] 和 join()',
-        starterCode: 'def reverse_words(text):\n    # 你的代码\n    pass\n',
+        question: '编写函数 get_first_and_last(my_list)，返回列表的第一个和最后一个元素组成的新列表。',
+        hint: '使用索引 [0] 和 [-1]',
+        starterCode: 'def get_first_and_last(my_list):\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'result = reverse_words("hello world")\nprint(result)',
-            expected: 'olleh dlrow',
+            code: 'result = get_first_and_last([1, 2, 3, 4, 5])\nprint(result)',
+            expected: '[1, 5]',
             hidden: false
           },
           {
-            code: 'result = reverse_words("Python is fun")\nprint(result)',
-            expected: 'nohtyP si nuf',
+            code: 'result = get_first_and_last(["a", "b", "c"])\nprint(result)',
+            expected: "[\'a\', \'c\']",
             hidden: true
           }
         ]
       },
       {
         id: 'q1-3',
-        question: '编写函数 find_duplicates(lst)，返回列表中所有重复出现的元素（不重复返回）。',
-        hint: '可以使用字典或集合来跟踪已见过的元素',
-        starterCode: 'def find_duplicates(lst):\n    # 你的代码\n    pass\n',
+        question: '编写函数 count_positive(numbers)，统计列表中正数的个数。',
+        hint: '使用 for 循环和 if 条件',
+        starterCode: 'def count_positive(numbers):\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'result = sorted(find_duplicates([1, 2, 3, 2, 4, 3, 5]))\nprint(result)',
-            expected: '[2, 3]',
+            code: 'result = count_positive([1, -2, 3, -4, 5])\nprint(result)',
+            expected: '3',
             hidden: false
           },
           {
-            code: 'result = sorted(find_duplicates([1, 1, 1, 2, 2, 3]))\nprint(result)',
-            expected: '[1, 2]',
+            code: 'result = count_positive([-1, -2, -3])\nprint(result)',
+            expected: '0',
             hidden: true
           }
         ]
       },
       {
         id: 'q1-4',
-        question: '编写函数 merge_dicts(dict1, dict2)，合并两个字典。如果有相同的键，值应该相加。',
-        hint: '遍历两个字典，使用 get() 方法获取默认值',
-        starterCode: 'def merge_dicts(dict1, dict2):\n    # 你的代码\n    pass\n',
+        question: '编写函数 create_dict_from_lists(keys, values)，从两个列表创建字典。',
+        hint: '使用 zip() 函数和 dict()',
+        starterCode: 'def create_dict_from_lists(keys, values):\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'result = merge_dicts({"a": 1, "b": 2}, {"b": 3, "c": 4})\nprint(sorted(result.items()))',
-            expected: "[('a', 1), ('b', 5), ('c', 4)]",
+            code: 'import json\nresult = create_dict_from_lists(["a", "b", "c"], [1, 2, 3])\nprint(json.dumps(result, sort_keys=True))',
+            expected: '{"a": 1, "b": 2, "c": 3}',
             hidden: false
           },
           {
-            code: 'result = merge_dicts({"x": 10}, {"y": 20, "x": 5})\nprint(sorted(result.items()))',
-            expected: "[('x', 15), ('y', 20)]",
+            code: 'import json\nresult = create_dict_from_lists(["x", "y"], [10, 20])\nprint(json.dumps(result, sort_keys=True))',
+            expected: '{"x": 10, "y": 20}',
             hidden: true
           }
         ]
       },
       {
         id: 'q1-5',
-        question: '编写函数 flatten_list(nested_list)，将嵌套列表展平成一维列表。例如：[[1,2],[3,4]] → [1,2,3,4]',
-        hint: '使用嵌套的 for 循环或列表推导式',
-        starterCode: 'def flatten_list(nested_list):\n    # 你的代码\n    pass\n',
+        question: '编写函数 get_even_numbers(n)，返回 0 到 n 之间的所有偶数列表。',
+        hint: '使用 range() 和步长 2，或使用 if 判断',
+        starterCode: 'def get_even_numbers(n):\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'result = flatten_list([[1, 2], [3, 4], [5]])\nprint(result)',
-            expected: '[1, 2, 3, 4, 5]',
+            code: 'result = get_even_numbers(10)\nprint(result)',
+            expected: '[0, 2, 4, 6, 8, 10]',
             hidden: false
           },
           {
-            code: 'result = flatten_list([[10], [20, 30], [40, 50, 60]])\nprint(result)',
-            expected: '[10, 20, 30, 40, 50, 60]',
+            code: 'result = get_even_numbers(5)\nprint(result)',
+            expected: '[0, 2, 4]',
             hidden: true
           }
         ]
@@ -647,100 +637,90 @@ def slow_function():
     quiz: [
       {
         id: 'q2-1',
-        question: '编写函数 read_numbers(filename)，从文件读取数字（每行一个），返回它们的列表。如果文件不存在，返回空列表。',
-        hint: '使用 try-except 处理 FileNotFoundError',
-        starterCode: '# 假设文件内容已通过字符串模拟\ndef read_numbers(content):\n    # content 是文件内容字符串\n    # 返回数字列表\n    pass\n',
+        question: '编写函数 greet_user(name)，返回问候语 "你好，{name}！"。',
+        hint: '使用 f-string 格式化字符串',
+        starterCode: 'def greet_user(name):\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'content = "1\\n2\\n3\\n4\\n5"\nresult = read_numbers(content)\nprint(result)',
-            expected: '[1, 2, 3, 4, 5]',
+            code: 'result = greet_user("小明")\nprint(result)',
+            expected: '你好，小明！',
             hidden: false
           },
           {
-            code: 'content = "10\\n20\\n30"\nresult = read_numbers(content)\nprint(result)',
-            expected: '[10, 20, 30]',
+            code: 'result = greet_user("Alice")\nprint(result)',
+            expected: '你好，Alice！',
             hidden: true
           }
         ]
       },
       {
         id: 'q2-2',
-        question: '编写函数 safe_divide(a, b)，安全地执行除法。如果 b 为 0，返回字符串 "Error"；否则返回商（保留2位小数的字符串）。',
-        hint: '使用 try-except 或条件判断',
-        starterCode: 'def safe_divide(a, b):\n    # 你的代码\n    pass\n',
+        question: '编写函数 calculate_sum(a, b)，返回两个数的和。',
+        hint: '直接返回 a + b',
+        starterCode: 'def calculate_sum(a, b):\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'result = safe_divide(10, 2)\nprint(result)',
-            expected: '5.00',
+            code: 'result = calculate_sum(10, 20)\nprint(result)',
+            expected: '30',
             hidden: false
           },
           {
-            code: 'result = safe_divide(10, 0)\nprint(result)',
-            expected: 'Error',
-            hidden: false
-          },
-          {
-            code: 'result = safe_divide(7, 3)\nprint(result)',
-            expected: '2.33',
+            code: 'result = calculate_sum(5, 7)\nprint(result)',
+            expected: '12',
             hidden: true
           }
         ]
       },
       {
         id: 'q2-3',
-        question: '编写函数 apply_operation(numbers, operation)，对列表中的每个数字应用给定的函数，返回新列表。',
-        hint: 'operation 是一个函数，使用列表推导式',
-        starterCode: 'def apply_operation(numbers, operation):\n    # 你的代码\n    pass\n',
+        question: '编写函数 is_even(n)，判断一个数是否为偶数。返回 True 或 False。',
+        hint: '使用 n % 2 == 0',
+        starterCode: 'def is_even(n):\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'result = apply_operation([1, 2, 3, 4], lambda x: x * 2)\nprint(result)',
-            expected: '[2, 4, 6, 8]',
+            code: 'result = is_even(4)\nprint(result)',
+            expected: 'True',
             hidden: false
           },
           {
-            code: 'result = apply_operation([1, 2, 3], lambda x: x ** 2)\nprint(result)',
-            expected: '[1, 4, 9]',
+            code: 'result = is_even(7)\nprint(result)',
+            expected: 'False',
             hidden: true
           }
         ]
       },
       {
         id: 'q2-4',
-        question: '编写函数 count_words(text)，统计文本中每个单词出现的次数，返回字典。忽略大小写和标点。',
-        hint: '使用 lower()、split() 和字典',
-        starterCode: 'def count_words(text):\n    # 你的代码\n    pass\n',
+        question: '编写函数 read_file_lines(content)，将文件内容字符串按行分割成列表。',
+        hint: '使用 content.split("\\n")',
+        starterCode: 'def read_file_lines(content):\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'import json\nresult = count_words("hello world hello")\nprint(json.dumps(result, sort_keys=True))',
-            expected: '{"hello": 2, "world": 1}',
+            code: 'content = "line1\\nline2\\nline3"\nresult = read_file_lines(content)\nprint(result)',
+            expected: "['line1', 'line2', 'line3']",
             hidden: false
           },
           {
-            code: 'import json\nresult = count_words("Python is great Python")\nprint(json.dumps(result, sort_keys=True))',
-            expected: '{"great": 1, "is": 1, "python": 2}',
+            code: 'content = "hello\\nworld"\nresult = read_file_lines(content)\nprint(result)',
+            expected: "['hello', 'world']",
             hidden: true
           }
         ]
       },
       {
         id: 'q2-5',
-        question: '编写函数 fibonacci(n)，返回斐波那契数列的第 n 项（n >= 0，F(0)=0, F(1)=1）。',
-        hint: '可以使用递归或迭代',
-        starterCode: 'def fibonacci(n):\n    # 你的代码\n    pass\n',
+        question: '编写函数 safe_divide(a, b)，安全地执行除法。如果 b 为 0，返回字符串 "Error"。',
+        hint: '使用 if 判断 b 是否为 0',
+        starterCode: 'def safe_divide(a, b):\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'result = fibonacci(6)\nprint(result)',
-            expected: '8',
+            code: 'result = safe_divide(10, 2)\nprint(result)',
+            expected: '5.0',
             hidden: false
           },
           {
-            code: 'result = fibonacci(10)\nprint(result)',
-            expected: '55',
-            hidden: true
-          },
-          {
-            code: 'result = fibonacci(0)\nprint(result)',
-            expected: '0',
+            code: 'result = safe_divide(10, 0)\nprint(result)',
+            expected: 'Error',
             hidden: true
           }
         ]
@@ -1146,100 +1126,85 @@ if status == Status.PENDING:
     quiz: [
       {
         id: 'q3-1',
-        question: '创建类 Rectangle，包含 width 和 height 属性，实现 area() 方法返回面积，实现 __str__() 返回 "Rectangle(width x height)"。',
-        hint: '使用 __init__ 和 __str__ 魔术方法',
-        starterCode: 'class Rectangle:\n    # 你的代码\n    pass\n',
+        question: '创建类 Person，包含 name 和 age 属性，以及 introduce() 方法返回 "我叫{name}，{age}岁"。',
+        hint: '使用 __init__ 初始化属性',
+        starterCode: 'class Person:\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'r = Rectangle(5, 10)\nprint(r.area())',
-            expected: '50',
+            code: 'p = Person("小明", 20)\nprint(p.introduce())',
+            expected: '我叫小明，20岁',
             hidden: false
           },
           {
-            code: 'r = Rectangle(3, 7)\nprint(str(r))',
-            expected: 'Rectangle(3 x 7)',
-            hidden: false
-          },
-          {
-            code: 'r = Rectangle(4, 4)\nprint(r.area())',
-            expected: '16',
+            code: 'p = Person("Alice", 25)\nprint(p.introduce())',
+            expected: '我叫Alice，25岁',
             hidden: true
           }
         ]
       },
       {
         id: 'q3-2',
-        question: '编写生成器函数 prime_generator(n)，生成小于 n 的所有质数。',
-        hint: '使用 yield，检查每个数是否能被小于它的数整除',
-        starterCode: 'def prime_generator(n):\n    # 你的代码\n    pass\n',
+        question: '编写函数 square_all(numbers)，返回所有数字的平方组成的列表。',
+        hint: '使用列表推导式 [x**2 for x in numbers]',
+        starterCode: 'def square_all(numbers):\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'result = list(prime_generator(10))\nprint(result)',
-            expected: '[2, 3, 5, 7]',
+            code: 'result = square_all([1, 2, 3, 4])\nprint(result)',
+            expected: '[1, 4, 9, 16]',
             hidden: false
           },
           {
-            code: 'result = list(prime_generator(20))\nprint(result)',
-            expected: '[2, 3, 5, 7, 11, 13, 17, 19]',
+            code: 'result = square_all([5, 6])\nprint(result)',
+            expected: '[25, 36]',
             hidden: true
           }
         ]
       },
       {
         id: 'q3-3',
-        question: '编写装饰器 cache，缓存函数的返回值。如果用相同参数再次调用，直接返回缓存结果。',
-        hint: '使用字典存储参数和结果的映射',
-        starterCode: 'def cache(func):\n    # 你的代码\n    pass\n\n@cache\ndef expensive_function(n):\n    return n * n\n',
+        question: '编写装饰器 add_greeting，在函数返回值前加上 "Hello, "。',
+        hint: '装饰器返回一个包装函数',
+        starterCode: 'def add_greeting(func):\n    # 你的代码\n    pass\n\n@add_greeting\ndef get_name():\n    return "World"\n',
         testCases: [
           {
-            code: 'result1 = expensive_function(5)\nresult2 = expensive_function(5)\nprint(result1)',
-            expected: '25',
+            code: 'result = get_name()\nprint(result)',
+            expected: 'Hello, World',
             hidden: false
-          },
-          {
-            code: 'result = expensive_function(10)\nprint(result)',
-            expected: '100',
-            hidden: true
           }
         ]
       },
       {
         id: 'q3-4',
-        question: '创建类 BankAccount，包含 balance 属性和 deposit(amount)、withdraw(amount) 方法。withdraw 不能使余额为负，否则返回 "Insufficient funds"。',
-        hint: '在 withdraw 中检查余额',
-        starterCode: 'class BankAccount:\n    # 你的代码\n    pass\n',
+        question: '创建类 Counter，包含 count 属性（初始为 0）和 increment() 方法（count 加 1）。',
+        hint: '在 __init__ 中初始化 count',
+        starterCode: 'class Counter:\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'acc = BankAccount(100)\nacc.deposit(50)\nprint(acc.balance)',
-            expected: '150',
+            code: 'c = Counter()\nc.increment()\nc.increment()\nprint(c.count)',
+            expected: '2',
             hidden: false
           },
           {
-            code: 'acc = BankAccount(100)\nresult = acc.withdraw(150)\nprint(result)',
-            expected: 'Insufficient funds',
-            hidden: false
-          },
-          {
-            code: 'acc = BankAccount(100)\nacc.withdraw(50)\nprint(acc.balance)',
-            expected: '50',
+            code: 'c = Counter()\nc.increment()\nprint(c.count)',
+            expected: '1',
             hidden: true
           }
         ]
       },
       {
         id: 'q3-5',
-        question: '编写函数 group_by_key(items, key_func)，按 key_func 的返回值将 items 分组，返回字典。',
-        hint: 'key_func 是一个函数，用于提取分组键',
-        starterCode: 'def group_by_key(items, key_func):\n    # 你的代码\n    pass\n',
+        question: '编写函数 filter_positive(numbers)，过滤出所有正数。',
+        hint: '使用列表推导式加 if 条件',
+        starterCode: 'def filter_positive(numbers):\n    # 你的代码\n    pass\n',
         testCases: [
           {
-            code: 'import json\nresult = group_by_key([1, 2, 3, 4, 5, 6], lambda x: x % 2)\nprint(json.dumps({str(k): sorted(v) for k, v in result.items()}, sort_keys=True))',
-            expected: '{"0": [2, 4, 6], "1": [1, 3, 5]}',
+            code: 'result = filter_positive([1, -2, 3, -4, 5])\nprint(result)',
+            expected: '[1, 3, 5]',
             hidden: false
           },
           {
-            code: 'import json\nresult = group_by_key(["apple", "banana", "cherry"], lambda x: len(x))\nprint(json.dumps({str(k): sorted(v) for k, v in result.items()}, sort_keys=True))',
-            expected: '{"5": ["apple"], "6": ["banana", "cherry"]}',
+            code: 'result = filter_positive([-1, -2, 0, 1])\nprint(result)',
+            expected: '[1]',
             hidden: true
           }
         ]
