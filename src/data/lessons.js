@@ -218,91 +218,66 @@ if 3 in [1, 2, 3, 4]:
     quiz: [
       {
         id: 'q1-1',
-        question: '编写函数 `get_list_length(my_list)`，接收一个列表作为参数，返回该列表的长度（整数）。\n\n**参数：** my_list (list) - 任意列表\n**返回：** int - 列表的元素个数\n**示例：** get_list_length([1, 2, 3, 4, 5]) → 5，get_list_length([]) → 0',
-        hint: '使用 len() 函数',
+        question: '创建一个名为 `my_list` 的列表，包含数字 1, 2, 3, 4, 5，然后打印这个列表的长度。\n\n**要求：**\n- 创建变量 `my_list = [1, 2, 3, 4, 5]`\n- 使用 `len()` 函数\n- 用 `print()` 输出长度\n\n**示例输出：** `5`',
+        hint: '使用 print(len(my_list))',
         starterCode: '',
         testCases: [
           {
-            code: 'result = get_list_length([1, 2, 3, 4, 5])\nprint(result)',
-            expected: '5',
+            code: '# 检查是否打印了正确的长度\nprint("测试通过" if __test_output__.strip() == "5" else f"错误：期望输出 5，实际输出 {__test_output__.strip()}")',
+            expected: '测试通过',
             hidden: false
-          },
-          {
-            code: 'result = get_list_length([10, 20])\nprint(result)',
-            expected: '2',
-            hidden: true
           }
         ]
       },
       {
         id: 'q1-2',
-        question: '编写函数 `get_first_and_last(my_list)`，接收一个列表（至少包含1个元素），返回由第一个和最后一个元素组成的新列表。\n\n**参数：** my_list (list) - 至少包含1个元素的列表\n**返回：** list - 包含两个元素的列表 [第一个元素, 最后一个元素]\n**示例：** get_first_and_last([1, 2, 3, 4, 5]) → [1, 5]，get_first_and_last([10]) → [10, 10]',
-        hint: '使用索引 [0] 和 [-1]',
+        question: '创建列表 `numbers = [1, 2, 3, 4, 5]`，打印第一个元素和最后一个元素（用空格分隔）。\n\n**要求：**\n- 使用索引 `[0]` 获取第一个元素\n- 使用索引 `[-1]` 获取最后一个元素\n- `print(numbers[0], numbers[-1])`\n\n**示例输出：** `1 5`',
+        hint: '使用 numbers[0] 和 numbers[-1]',
         starterCode: '',
         testCases: [
           {
-            code: 'result = get_first_and_last([1, 2, 3, 4, 5])\nprint(result)',
-            expected: '[1, 5]',
+            code: 'output = __test_output__.strip()\nprint("测试通过" if output == "1 5" else f"错误：期望 \'1 5\'，实际 \'{output}\'")',
+            expected: '测试通过',
             hidden: false
-          },
-          {
-            code: 'result = get_first_and_last(["a", "b", "c"])\nprint(result)',
-            expected: "[\'a\', \'c\']",
-            hidden: true
           }
         ]
       },
       {
         id: 'q1-3',
-        question: '编写函数 `count_positive(numbers)`，接收一个数字列表，返回其中所有正数（大于0）的个数。\n\n**参数：** numbers (list) - 包含整数或浮点数的列表\n**返回：** int - 正数的个数\n**边界：** 0不算正数\n**示例：** count_positive([1, -2, 3, -4, 5]) → 3，count_positive([0, -1, -2]) → 0',
-        hint: '使用 for 循环和 if 条件',
+        question: '创建列表 `numbers = [1, -2, 3, -4, 5]`，用 for 循环统计并打印其中正数的个数。\n\n**要求：**\n- 创建计数变量（如 `count = 0`）\n- 使用 for 循环遍历列表\n- 用 if 判断 `num > 0`\n- 最后 `print(count)`\n\n**示例输出：** `3`',
+        hint: 'count = 0; for num in numbers: if num > 0: count += 1',
         starterCode: '',
         testCases: [
           {
-            code: 'result = count_positive([1, -2, 3, -4, 5])\nprint(result)',
-            expected: '3',
+            code: 'output = __test_output__.strip()\nprint("测试通过" if output == "3" else f"错误：期望 3，实际 {output}")',
+            expected: '测试通过',
             hidden: false
-          },
-          {
-            code: 'result = count_positive([-1, -2, -3])\nprint(result)',
-            expected: '0',
-            hidden: true
           }
         ]
       },
       {
         id: 'q1-4',
-        question: '编写函数 `create_dict_from_lists(keys, values)`，接收两个长度相同的列表，返回由它们组成的字典（keys作为键，values作为值）。\n\n**参数：** keys (list) - 键列表，values (list) - 值列表（两者长度相同）\n**返回：** dict - 键值对字典\n**示例：** create_dict_from_lists(["a", "b", "c"], [1, 2, 3]) → {"a": 1, "b": 2, "c": 3}',
-        hint: '使用 zip() 函数和 dict()',
+        question: '创建两个列表：`keys = ["a", "b", "c"]` 和 `values = [1, 2, 3]`，用 `zip()` 和 `dict()` 创建字典并打印。\n\n**要求：**\n- `result = dict(zip(keys, values))`\n- `print(result)`\n\n**示例输出：** `{\'a\': 1, \'b\': 2, \'c\': 3}`',
+        hint: '使用 dict(zip(keys, values))',
         starterCode: '',
         testCases: [
           {
-            code: 'import json\nresult = create_dict_from_lists(["a", "b", "c"], [1, 2, 3])\nprint(json.dumps(result, sort_keys=True))',
-            expected: '{"a": 1, "b": 2, "c": 3}',
+            code: 'import ast\ntry:\n    output = __test_output__.strip()\n    result_dict = ast.literal_eval(output)\n    expected_dict = {"a": 1, "b": 2, "c": 3}\n    print("测试通过" if result_dict == expected_dict else f"错误：字典内容不正确")\nexcept:\n    print(f"错误：输出格式不正确，应为字典")',
+            expected: '测试通过',
             hidden: false
-          },
-          {
-            code: 'import json\nresult = create_dict_from_lists(["x", "y"], [10, 20])\nprint(json.dumps(result, sort_keys=True))',
-            expected: '{"x": 10, "y": 20}',
-            hidden: true
           }
         ]
       },
       {
         id: 'q1-5',
-        question: '编写函数 `get_even_numbers(n)`，接收一个非负整数 n，返回从 0 到 n（包含n）之间的所有偶数列表。\n\n**参数：** n (int) - 非负整数\n**返回：** list - 包含所有偶数的列表，按升序排列\n**边界：** 0 是偶数，包含在结果中\n**示例：** get_even_numbers(10) → [0, 2, 4, 6, 8, 10]，get_even_numbers(5) → [0, 2, 4]',
-        hint: '使用 range() 和步长 2，或使用 if 判断',
+        question: '使用 for 循环和 range()，创建一个包含 0 到 10 之间所有偶数的列表，并打印。\n\n**要求：**\n- 创建空列表 `evens = []`\n- 使用 `range(0, 11, 2)` 或 `range(11)` 加 if 判断\n- 用 `append()` 添加偶数\n- 最后 `print(evens)`\n\n**示例输出：** `[0, 2, 4, 6, 8, 10]`',
+        hint: 'range(0, 11, 2) 或 for i in range(11): if i % 2 == 0',
         starterCode: '',
         testCases: [
           {
-            code: 'result = get_even_numbers(10)\nprint(result)',
-            expected: '[0, 2, 4, 6, 8, 10]',
+            code: 'import ast\ntry:\n    output = __test_output__.strip()\n    result_list = ast.literal_eval(output)\n    expected = [0, 2, 4, 6, 8, 10]\n    print("测试通过" if result_list == expected else f"错误：期望 {expected}，实际 {result_list}")\nexcept:\n    print(f"错误：输出格式不正确")',
+            expected: '测试通过',
             hidden: false
-          },
-          {
-            code: 'result = get_even_numbers(5)\nprint(result)',
-            expected: '[0, 2, 4]',
-            hidden: true
           }
         ]
       }

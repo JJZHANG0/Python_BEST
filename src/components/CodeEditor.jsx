@@ -96,17 +96,25 @@ except Exception as e:
 import sys
 from io import StringIO
 
-${code}
-
-__test_output__ = StringIO()
-sys.stdout = __test_output__
+# Capture student code output
+__student_output__ = StringIO()
+sys.stdout = __student_output__
 
 try:
+${code.split('\n').map(line => '    ' + line).join('\n')}
+except Exception as e:
+    print(f"学生代码错误: {type(e).__name__}: {str(e)}")
+
+__test_output__ = __student_output__.getvalue().strip()
+sys.stdout = sys.__stdout__
+
+# Run test case
+try:
 ${testCase.code.split('\n').map(line => '    ' + line).join('\n')}
-    __test_result__ = __test_output__.getvalue().strip()
+    __test_result__ = __test_output__
     __test_success__ = True
 except Exception as e:
-    __test_result__ = f"错误: {type(e).__name__}: {str(e)}"
+    __test_result__ = f"测试错误: {type(e).__name__}: {str(e)}"
     __test_success__ = False
 `
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import ReactMarkdown from 'react-markdown'
 import CodeEditor from './CodeEditor'
 
 function Quiz({ lesson, onComplete, onBack }) {
@@ -61,7 +62,8 @@ function Quiz({ lesson, onComplete, onBack }) {
       {question && (
         <div className="question-card">
           <div className="question-title">
-            {currentQuestion + 1}. {question.question}
+            <strong>{currentQuestion + 1}. </strong>
+            <ReactMarkdown>{question.question}</ReactMarkdown>
           </div>
 
           {question.hint && (
@@ -79,7 +81,7 @@ function Quiz({ lesson, onComplete, onBack }) {
 
           <CodeEditor
             questionId={question.id}
-            initialCode={answers[question.id] || question.starterCode || '# 在这里写你的代码\n'}
+            initialCode={answers[question.id] !== undefined ? answers[question.id] : (question.starterCode || '')}
             testCases={question.testCases}
             onSubmit={handleCodeSubmit}
             previousResult={testResults[question.id]}
