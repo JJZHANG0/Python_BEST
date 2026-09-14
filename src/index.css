@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pixel-pink: #ff6b9d;
+  --pixel-purple: #c06fff;
+  --pixel-blue: #4da6ff;
+  --pixel-green: #4dff88;
+  --pixel-yellow: #ffd24d;
+  --pixel-orange: #ff9d4d;
+  --bg-white: #ffffff;
+  --text-dark: #2a2a2a;
+  --border-thick: 4px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', sans-serif;
+  background: var(--bg-white);
+  color: var(--text-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.pixel-font {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7em;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--pixel-pink) 0%, var(--pixel-purple) 100%);
+  border-bottom: var(--border-thick) solid var(--text-dark);
+  box-shadow: 0 8px 0 var(--text-dark);
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  color: white;
+  text-shadow: 4px 4px 0 var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: white;
+  font-size: 1.1em;
+}
+
+/* Lesson Grid */
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.lesson-card {
+  background: white;
+  border: var(--border-thick) solid var(--text-dark);
+  border-radius: 8px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 6px 6px 0 var(--text-dark);
+  position: relative;
+}
+
+.lesson-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--text-dark);
+}
+
+.lesson-card.challenge {
+  background: linear-gradient(135deg, var(--pixel-yellow) 0%, var(--pixel-orange) 100%);
+}
+
+.lesson-number {
+  display: inline-block;
+  background: var(--pixel-blue);
+  color: white;
+  padding: 8px 16px;
+  border: 3px solid var(--text-dark);
+  border-radius: 6px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 0.9em;
+}
+
+.lesson-card.challenge .lesson-number {
+  background: var(--pixel-orange);
+}
+
+.lesson-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+
+.lesson-desc {
+  color: #555;
+  font-size: 0.95em;
+}
+
+/* Lesson Detail Page */
+.lesson-detail {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--pixel-purple);
+  color: white;
+  border: var(--border-thick) solid var(--text-dark);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 4px 4px 0 var(--text-dark);
+}
+
+.back-button:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0 var(--text-dark);
+}
+
+.lesson-content {
+  background: white;
+  border: var(--border-thick) solid var(--text-dark);
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 8px 8px 0 var(--text-dark);
+}
+
+.lesson-content h2 {
+  color: var(--pixel-purple);
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--pixel-purple);
+}
+
+.lesson-content h3 {
+  color: var(--pixel-blue);
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+.lesson-content p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.lesson-content ul,
+.lesson-content ol {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.lesson-content li {
+  margin-bottom: 8px;
+}
+
+.lesson-content pre {
+  background: #f5f5f5;
+  border: 3px solid var(--text-dark);
+  border-radius: 6px;
+  padding: 20px;
+  overflow-x: auto;
+  margin: 20px 0;
+  box-shadow: 4px 4px 0 var(--text-dark);
+}
+
+.lesson-content code {
+  font-family: 'Consolas', 'Monaco', monospace;
+  background: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.lesson-content pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Quiz Section */
+.quiz-section {
+  background: white;
+  border: var(--border-thick) solid var(--text-dark);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 8px 8px 0 var(--text-dark);
+}
+
+.quiz-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.quiz-header h2 {
+  color: var(--pixel-pink);
+  margin-bottom: 10px;
+}
+
+.quiz-progress {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.question-card {
+  background: #fafafa;
+  border: 3px solid var(--text-dark);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.question-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.code-editor-container {
+  border: 3px solid var(--text-dark);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 0 var(--text-dark);
+}
+
+.editor-toolbar {
+  background: var(--pixel-blue);
+  padding: 10px 15px;
+  display: flex;
+  gap: 10px;
+  border-bottom: 3px solid var(--text-dark);
+}
+
+.editor-button {
+  padding: 8px 16px;
+  background: white;
+  color: var(--text-dark);
+  border: 2px solid var(--text-dark);
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.9em;
+}
+
+.editor-button:hover {
+  background: var(--pixel-green);
+}
+
+.editor-button.run {
+  background: var(--pixel-green);
+}
+
+.editor-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.output-panel {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 15px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.9em;
+  min-height: 100px;
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.output-panel.success {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.output-panel.error {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.quiz-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-button {
+  padding: 14px 28px;
+  background: var(--pixel-purple);
+  color: white;
+  border: var(--border-thick) solid var(--text-dark);
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 4px 4px 0 var(--text-dark);
+}
+
+.nav-button:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0 var(--text-dark);
+}
+
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.nav-button.primary {
+  background: var(--pixel-pink);
+}
+
+/* Score Card */
+.score-card-section {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.score-display {
+  font-size: 4em;
+  font-weight: bold;
+  color: var(--pixel-purple);
+  margin: 30px 0;
+  text-shadow: 4px 4px 0 var(--text-dark);
+}
+
+.score-message {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.score-details {
+  background: #f5f5f5;
+  border: 3px solid var(--text-dark);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+.score-details p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.download-button {
+  padding: 16px 32px;
+  background: var(--pixel-green);
+  color: white;
+  border: var(--border-thick) solid var(--text-dark);
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 6px 6px 0 var(--text-dark);
+  margin-top: 20px;
+}
+
+.download-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--text-dark);
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  padding: 60px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .lesson-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .header h1 {
+    font-size: 1.8em;
+  }
+
+  .lesson-content,
+  .quiz-section {
+    padding: 20px;
+  }
+
+  .quiz-navigation {
+    flex-direction: column;
+  }
+
+  .nav-button {
+    width: 100%;
+  }
+}
