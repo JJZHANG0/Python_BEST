@@ -218,9 +218,9 @@ if 3 in [1, 2, 3, 4]:
     quiz: [
       {
         id: 'q1-1',
-        question: '编写函数 get_list_length(my_list)，返回列表的长度。',
+        question: '编写函数 `get_list_length(my_list)`，接收一个列表作为参数，返回该列表的长度（整数）。\n\n**参数：** my_list (list) - 任意列表\n**返回：** int - 列表的元素个数\n**示例：** get_list_length([1, 2, 3, 4, 5]) → 5，get_list_length([]) → 0',
         hint: '使用 len() 函数',
-        starterCode: 'def get_list_length(my_list):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = get_list_length([1, 2, 3, 4, 5])\nprint(result)',
@@ -236,9 +236,9 @@ if 3 in [1, 2, 3, 4]:
       },
       {
         id: 'q1-2',
-        question: '编写函数 get_first_and_last(my_list)，返回列表的第一个和最后一个元素组成的新列表。',
+        question: '编写函数 `get_first_and_last(my_list)`，接收一个列表（至少包含1个元素），返回由第一个和最后一个元素组成的新列表。\n\n**参数：** my_list (list) - 至少包含1个元素的列表\n**返回：** list - 包含两个元素的列表 [第一个元素, 最后一个元素]\n**示例：** get_first_and_last([1, 2, 3, 4, 5]) → [1, 5]，get_first_and_last([10]) → [10, 10]',
         hint: '使用索引 [0] 和 [-1]',
-        starterCode: 'def get_first_and_last(my_list):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = get_first_and_last([1, 2, 3, 4, 5])\nprint(result)',
@@ -254,9 +254,9 @@ if 3 in [1, 2, 3, 4]:
       },
       {
         id: 'q1-3',
-        question: '编写函数 count_positive(numbers)，统计列表中正数的个数。',
+        question: '编写函数 `count_positive(numbers)`，接收一个数字列表，返回其中所有正数（大于0）的个数。\n\n**参数：** numbers (list) - 包含整数或浮点数的列表\n**返回：** int - 正数的个数\n**边界：** 0不算正数\n**示例：** count_positive([1, -2, 3, -4, 5]) → 3，count_positive([0, -1, -2]) → 0',
         hint: '使用 for 循环和 if 条件',
-        starterCode: 'def count_positive(numbers):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = count_positive([1, -2, 3, -4, 5])\nprint(result)',
@@ -272,9 +272,9 @@ if 3 in [1, 2, 3, 4]:
       },
       {
         id: 'q1-4',
-        question: '编写函数 create_dict_from_lists(keys, values)，从两个列表创建字典。',
+        question: '编写函数 `create_dict_from_lists(keys, values)`，接收两个长度相同的列表，返回由它们组成的字典（keys作为键，values作为值）。\n\n**参数：** keys (list) - 键列表，values (list) - 值列表（两者长度相同）\n**返回：** dict - 键值对字典\n**示例：** create_dict_from_lists(["a", "b", "c"], [1, 2, 3]) → {"a": 1, "b": 2, "c": 3}',
         hint: '使用 zip() 函数和 dict()',
-        starterCode: 'def create_dict_from_lists(keys, values):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nresult = create_dict_from_lists(["a", "b", "c"], [1, 2, 3])\nprint(json.dumps(result, sort_keys=True))',
@@ -290,9 +290,9 @@ if 3 in [1, 2, 3, 4]:
       },
       {
         id: 'q1-5',
-        question: '编写函数 get_even_numbers(n)，返回 0 到 n 之间的所有偶数列表。',
+        question: '编写函数 `get_even_numbers(n)`，接收一个非负整数 n，返回从 0 到 n（包含n）之间的所有偶数列表。\n\n**参数：** n (int) - 非负整数\n**返回：** list - 包含所有偶数的列表，按升序排列\n**边界：** 0 是偶数，包含在结果中\n**示例：** get_even_numbers(10) → [0, 2, 4, 6, 8, 10]，get_even_numbers(5) → [0, 2, 4]',
         hint: '使用 range() 和步长 2，或使用 if 判断',
-        starterCode: 'def get_even_numbers(n):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = get_even_numbers(10)\nprint(result)',
@@ -637,9 +637,9 @@ def slow_function():
     quiz: [
       {
         id: 'q2-1',
-        question: '编写函数 greet_user(name)，返回问候语 "你好，{name}！"。',
+        question: '编写函数 `greet_user(name)`，接收一个字符串参数 name，返回格式化的问候语："你好，{name}！"。\n\n**参数：** name (str) - 用户名字\n**返回：** str - 格式为 "你好，{name}！" 的字符串\n**示例：** greet_user("小明") → "你好，小明！"，greet_user("Alice") → "你好，Alice！"',
         hint: '使用 f-string 格式化字符串',
-        starterCode: 'def greet_user(name):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = greet_user("小明")\nprint(result)',
@@ -655,9 +655,9 @@ def slow_function():
       },
       {
         id: 'q2-2',
-        question: '编写函数 calculate_sum(a, b)，返回两个数的和。',
+        question: '编写函数 `calculate_sum(a, b)`，接收两个数字，返回它们的和。\n\n**参数：** a (int/float) - 第一个数字，b (int/float) - 第二个数字\n**返回：** int/float - 两数之和\n**示例：** calculate_sum(10, 20) → 30，calculate_sum(5.5, 2.5) → 8.0',
         hint: '直接返回 a + b',
-        starterCode: 'def calculate_sum(a, b):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = calculate_sum(10, 20)\nprint(result)',
@@ -673,9 +673,9 @@ def slow_function():
       },
       {
         id: 'q2-3',
-        question: '编写函数 is_even(n)，判断一个数是否为偶数。返回 True 或 False。',
+        question: '编写函数 `is_even(n)`，接收一个整数，判断它是否为偶数。如果是偶数返回 True，否则返回 False。\n\n**参数：** n (int) - 整数\n**返回：** bool - True 表示偶数，False 表示奇数\n**示例：** is_even(4) → True，is_even(7) → False，is_even(0) → True',
         hint: '使用 n % 2 == 0',
-        starterCode: 'def is_even(n):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = is_even(4)\nprint(result)',
@@ -691,9 +691,9 @@ def slow_function():
       },
       {
         id: 'q2-4',
-        question: '编写函数 read_file_lines(content)，将文件内容字符串按行分割成列表。',
+        question: '编写函数 `read_file_lines(content)`，接收文件内容字符串，按换行符分割成列表。\n\n**参数：** content (str) - 文件内容字符串，可能包含换行符 \\n\n**返回：** list - 每行作为一个元素的字符串列表\n**示例：** read_file_lines("line1\\nline2\\nline3") → ["line1", "line2", "line3"]',
         hint: '使用 content.split("\\n")',
-        starterCode: 'def read_file_lines(content):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'content = "line1\\nline2\\nline3"\nresult = read_file_lines(content)\nprint(result)',
@@ -709,9 +709,9 @@ def slow_function():
       },
       {
         id: 'q2-5',
-        question: '编写函数 safe_divide(a, b)，安全地执行除法。如果 b 为 0，返回字符串 "Error"。',
+        question: '编写函数 `safe_divide(a, b)`，安全地执行除法。如果除数 b 为 0，返回字符串 "Error"；否则返回 a 除以 b 的结果（浮点数）。\n\n**参数：** a (int/float) - 被除数，b (int/float) - 除数\n**返回：** float 或 str - 除法结果或 "Error"\n**边界：** b == 0 时返回 "Error"\n**示例：** safe_divide(10, 2) → 5.0，safe_divide(10, 0) → "Error"',
         hint: '使用 if 判断 b 是否为 0',
-        starterCode: 'def safe_divide(a, b):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = safe_divide(10, 2)\nprint(result)',
@@ -1126,9 +1126,9 @@ if status == Status.PENDING:
     quiz: [
       {
         id: 'q3-1',
-        question: '创建类 Person，包含 name 和 age 属性，以及 introduce() 方法返回 "我叫{name}，{age}岁"。',
+        question: '创建类 `Person`，包含 name 和 age 两个属性（通过 __init__ 初始化），以及一个方法 `introduce()`，返回格式为 "我叫{name}，{age}岁" 的字符串。\n\n**类名：** Person\n**初始化参数：** name (str), age (int)\n**方法：** introduce() - 返回 str\n**示例：** p = Person("小明", 20); p.introduce() → "我叫小明，20岁"',
         hint: '使用 __init__ 初始化属性',
-        starterCode: 'class Person:\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'p = Person("小明", 20)\nprint(p.introduce())',
@@ -1144,9 +1144,9 @@ if status == Status.PENDING:
       },
       {
         id: 'q3-2',
-        question: '编写函数 square_all(numbers)，返回所有数字的平方组成的列表。',
+        question: '编写函数 `square_all(numbers)`，接收一个数字列表，返回每个数字的平方组成的新列表。\n\n**参数：** numbers (list) - 数字列表\n**返回：** list - 平方后的数字列表\n**示例：** square_all([1, 2, 3, 4]) → [1, 4, 9, 16]，square_all([5, 6]) → [25, 36]',
         hint: '使用列表推导式 [x**2 for x in numbers]',
-        starterCode: 'def square_all(numbers):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = square_all([1, 2, 3, 4])\nprint(result)',
@@ -1162,9 +1162,9 @@ if status == Status.PENDING:
       },
       {
         id: 'q3-3',
-        question: '编写装饰器 add_greeting，在函数返回值前加上 "Hello, "。',
+        question: '编写装饰器 `add_greeting`，它接收一个函数，返回一个新函数。新函数会在原函数返回值前加上 "Hello, "。\n\n**装饰器名：** add_greeting\n**功能：** 修改函数返回值，在前面加 "Hello, "\n**示例：** 如果原函数返回 "World"，装饰后返回 "Hello, World"',
         hint: '装饰器返回一个包装函数',
-        starterCode: 'def add_greeting(func):\n    # 你的代码\n    pass\n\n@add_greeting\ndef get_name():\n    return "World"\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = get_name()\nprint(result)',
@@ -1175,9 +1175,9 @@ if status == Status.PENDING:
       },
       {
         id: 'q3-4',
-        question: '创建类 Counter，包含 count 属性（初始为 0）和 increment() 方法（count 加 1）。',
+        question: '创建类 `Counter`，包含一个属性 count（初始值为 0）和一个方法 `increment()`，每次调用 increment() 使 count 增加 1。\n\n**类名：** Counter\n**初始化：** count 属性初始化为 0\n**方法：** increment() - 使 count 加 1（无返回值）\n**示例：** c = Counter(); c.increment(); c.increment(); print(c.count) → 2',
         hint: '在 __init__ 中初始化 count',
-        starterCode: 'class Counter:\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'c = Counter()\nc.increment()\nc.increment()\nprint(c.count)',
@@ -1193,9 +1193,9 @@ if status == Status.PENDING:
       },
       {
         id: 'q3-5',
-        question: '编写函数 filter_positive(numbers)，过滤出所有正数。',
+        question: '编写函数 `filter_positive(numbers)`，接收一个数字列表，返回只包含正数（大于0）的新列表。\n\n**参数：** numbers (list) - 包含整数或浮点数的列表\n**返回：** list - 只包含正数的列表，保持原顺序\n**边界：** 0 不是正数，应被过滤\n**示例：** filter_positive([1, -2, 3, -4, 5]) → [1, 3, 5]，filter_positive([-1, 0, 1]) → [1]',
         hint: '使用列表推导式加 if 条件',
-        starterCode: 'def filter_positive(numbers):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = filter_positive([1, -2, 3, -4, 5])\nprint(result)',
@@ -1564,9 +1564,9 @@ print(f"响应时间: {response.elapsed.total_seconds()}秒")
     quiz: [
       {
         id: 'q4-1',
-        question: '编写函数 fetch_json(url)，使用 requests 模拟 GET 请求（返回固定数据），返回 JSON 数据。如果失败返回 None。',
+        question: '编写函数 `fetch_json(url)`，模拟一个 GET 请求并返回固定的 JSON 数据。返回字典 {"status": "ok", "data": [1, 2, 3]}。\n\n**参数：** url (str) - API URL（本题中可忽略，仅作为参数）\n**返回：** dict - 固定返回 {"status": "ok", "data": [1, 2, 3]}\n**示例：** fetch_json("https://api.example.com") → {"status": "ok", "data": [1, 2, 3]}',
         hint: '模拟返回 {"status": "ok", "data": [1, 2, 3]}',
-        starterCode: 'def fetch_json(url):\n    # 模拟返回 JSON\n    import json\n    return {"status": "ok", "data": [1, 2, 3]}\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nresult = fetch_json("https://api.example.com")\nprint(json.dumps(result, sort_keys=True))',
@@ -1577,9 +1577,9 @@ print(f"响应时间: {response.elapsed.total_seconds()}秒")
       },
       {
         id: 'q4-2',
-        question: '编写函数 build_url(base, endpoint, params)，拼接 URL 和查询参数。例如：base="https://api.com", endpoint="users", params={"page": 1} → "https://api.com/users?page=1"',
+        question: '编写函数 `build_url(base, endpoint, params)`，拼接 URL 和查询参数。base 是基础 URL，endpoint 是路径，params 是参数字典，返回完整 URL。\n\n**参数：** base (str) - 基础URL，endpoint (str) - 端点路径，params (dict) - 查询参数字典\n**返回：** str - 格式为 "{base}/{endpoint}?key1=value1&key2=value2" 的完整URL\n**示例：** build_url("https://api.com", "users", {"page": "1"}) → "https://api.com/users?page=1"',
         hint: '使用字符串拼接和 join',
-        starterCode: 'def build_url(base, endpoint, params):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = build_url("https://api.com", "users", {"page": "1"})\nprint(result)',
@@ -1595,9 +1595,9 @@ print(f"响应时间: {response.elapsed.total_seconds()}秒")
       },
       {
         id: 'q4-3',
-        question: '编写函数 parse_status(code)，返回 HTTP 状态码的类别："2xx Success", "4xx Client Error", "5xx Server Error", "Other"。',
+        question: '编写函数 `parse_status(code)`，接收 HTTP 状态码（整数），返回该状态码所属类别的字符串。\n\n**参数：** code (int) - HTTP 状态码\n**返回：** str - 状态码类别\n**分类规则：** 200-299 → "2xx Success"，400-499 → "4xx Client Error"，500-599 → "5xx Server Error"，其他 → "Other"\n**示例：** parse_status(200) → "2xx Success"，parse_status(404) → "4xx Client Error"',
         hint: '检查状态码的范围',
-        starterCode: 'def parse_status(code):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = parse_status(200)\nprint(result)',
@@ -1618,9 +1618,9 @@ print(f"响应时间: {response.elapsed.total_seconds()}秒")
       },
       {
         id: 'q4-4',
-        question: '编写函数 extract_json_field(json_str, field)，从 JSON 字符串中提取指定字段的值。如果字段不存在返回 None。',
+        question: '编写函数 `extract_json_field(json_str, field)`，从 JSON 字符串中解析并提取指定字段的值。如果字段不存在返回 None。\n\n**参数：** json_str (str) - JSON 格式字符串，field (str) - 要提取的字段名\n**返回：** any 或 None - 字段值，或 None（字段不存在时）\n**示例：** extract_json_field(\'{"name": "Tom", "age": 20}\', "name") → "Tom"，extract_json_field(\'{"name": "Tom"}\', "missing") → None',
         hint: '使用 json.loads 和字典的 get 方法',
-        starterCode: 'import json\n\ndef extract_json_field(json_str, field):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = extract_json_field(\'{"name": "Tom", "age": 20}\', "name")\nprint(result)',
@@ -1636,9 +1636,9 @@ print(f"响应时间: {response.elapsed.total_seconds()}秒")
       },
       {
         id: 'q4-5',
-        question: '编写函数 batch_fetch(urls)，接收 URL 列表，返回成功获取数据的数量（模拟：长度 > 10 的 URL 成功）。',
+        question: '编写函数 `batch_fetch(urls)`，接收 URL 列表，返回"成功"获取数据的 URL 数量。模拟规则：URL 长度大于 10 视为成功。\n\n**参数：** urls (list) - 字符串列表，每个元素是一个 URL\n**返回：** int - 长度 > 10 的 URL 数量\n**示例：** batch_fetch(["https://a.com", "https://example.com"]) → 1（第二个URL长度>10）',
         hint: '遍历 URLs，检查长度',
-        starterCode: 'def batch_fetch(urls):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = batch_fetch(["https://a.com", "https://example.com"])\nprint(result)',
@@ -1989,9 +1989,9 @@ STATICFILES_DIRS = [
     quiz: [
       {
         id: 'q5-1',
-        question: '编写函数 parse_url_params(url)，从 URL 中提取路径参数。例如：\"/posts/123/\" → {\"post_id\": \"123\"}，\"/users/john/\" → {\"username\": \"john\"}',
+        question: '编写函数 `parse_url_params(url)`，从 Django URL 路径中提取参数。假设格式为 "/resource/value/"，提取 value 并返回字典。\n\n**参数：** url (str) - URL 路径，如 "/posts/123/" 或 "/users/john/"\n**返回：** dict - 根据路径返回对应字典\n**规则：** "/posts/{id}/" → {"post_id": "{id}"}，"/users/{name}/" → {"username": "{name}"}\n**示例：** parse_url_params("/posts/123/") → {"post_id": "123"}',
         hint: '分割路径，提取非空部分',
-        starterCode: 'def parse_url_params(url):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nresult = parse_url_params(\"/posts/123/\")\nprint(json.dumps(result, sort_keys=True))',
@@ -2007,9 +2007,9 @@ STATICFILES_DIRS = [
       },
       {
         id: 'q5-2',
-        question: '编写函数 build_context(data_dict)，构建模板上下文。接收字典，添加 \"timestamp\" 键（值为 \"2024-01-01\"），返回新字典。',
+        question: '编写函数 `build_context(data_dict)`，为 Django 模板构建上下文。接收一个字典，添加 "timestamp" 键（值为 "2024-01-01"），返回新字典。\n\n**参数：** data_dict (dict) - 原始数据字典\n**返回：** dict - 包含原数据 + timestamp 字段的新字典\n**示例：** build_context({"title": "Test"}) → {"title": "Test", "timestamp": "2024-01-01"}',
         hint: '复制字典，添加新键',
-        starterCode: 'def build_context(data_dict):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nresult = build_context({\"title\": \"Test\"})\nprint(json.dumps(result, sort_keys=True))',
@@ -2020,9 +2020,9 @@ STATICFILES_DIRS = [
       },
       {
         id: 'q5-3',
-        question: '编写函数 reverse_url(app_name, view_name, *args)，生成 URL 字符串。格式：\"/{app_name}/{view_name}/{arg1}/{arg2}/\"',
+        question: '编写函数 `reverse_url(app_name, view_name, *args)`，生成 Django 风格的 URL 字符串。格式：\"/{app_name}/{view_name}/{arg1}/{arg2}/\"。\n\n**参数：** app_name (str) - 应用名，view_name (str) - 视图名，*args - 可变参数\n**返回：** str - 拼接的 URL 路径\n**示例：** reverse_url("blog", "post_detail", 123) → "/blog/post_detail/123/"',
         hint: '使用 join 和 f-string',
-        starterCode: 'def reverse_url(app_name, view_name, *args):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = reverse_url(\"blog\", \"post_detail\", 123)\nprint(result)',
@@ -2038,9 +2038,9 @@ STATICFILES_DIRS = [
       },
       {
         id: 'q5-4',
-        question: '编写函数 truncate_html(html, length)，截断 HTML 内容到指定长度（不包含标签）。简化：假设没有嵌套标签，只需统计非 <> 之间的字符。',
+        question: '编写函数 `truncate_html(html, length)`，截断 HTML 内容到指定字符长度（不计算标签）。简化假设：无嵌套标签，只统计非 <> 之间的字符。\n\n**参数：** html (str) - HTML 字符串，length (int) - 目标长度\n**返回：** str - 截断后的纯文本（去除标签）\n**示例：** truncate_html("<p>Hello World</p>", 5) → "Hello"',
         hint: '遍历字符，跳过标签内容',
-        starterCode: 'def truncate_html(html, length):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = truncate_html(\"<p>Hello World</p>\", 5)\nprint(result)',
@@ -2051,9 +2051,9 @@ STATICFILES_DIRS = [
       },
       {
         id: 'q5-5',
-        question: '编写函数 validate_view_name(name)，验证视图函数名是否合法（只包含字母、数字、下划线，且以字母开头）。',
+        question: '编写函数 `validate_view_name(name)`，验证 Django 视图函数名是否合法。合法规则：只包含字母、数字、下划线，且必须以字母开头。\n\n**参数：** name (str) - 视图函数名\n**返回：** bool - True 表示合法，False 表示不合法\n**示例：** validate_view_name("post_list") → True，validate_view_name("123_invalid") → False',
         hint: '使用 isalnum() 和字符串方法',
-        starterCode: 'def validate_view_name(name):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = validate_view_name(\"post_list\")\nprint(result)',
@@ -2413,9 +2413,9 @@ class PostAdmin(admin.ModelAdmin):
     quiz: [
       {
         id: 'q6-1',
-        question: '编写函数 filter_by_year(items, year_field, target_year)，过滤指定年份的项。items 是字典列表，年份格式 \"YYYY-MM-DD\"。',
+        question: '编写函数 `filter_by_year(items, year_field, target_year)`，过滤字典列表中指定年份的项。年份格式为 "YYYY-MM-DD"，只匹配年份部分（前4位）。\n\n**参数：** items (list) - 字典列表，year_field (str) - 日期字段名，target_year (str) - 目标年份（如"2024"）\n**返回：** list - 匹配年份的项列表\n**示例：** filter_by_year([{"date": "2024-01-01"}, {"date": "2023-06-15"}], "date", "2024") → 返回1个项的列表',
         hint: '检查日期字符串的前4位',
-        starterCode: 'def filter_by_year(items, year_field, target_year):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'items = [{\"date\": \"2024-01-01\"}, {\"date\": \"2023-06-15\"}]\nresult = filter_by_year(items, \"date\", \"2024\")\nprint(len(result))',
@@ -2426,9 +2426,9 @@ class PostAdmin(admin.ModelAdmin):
       },
       {
         id: 'q6-2',
-        question: '编写函数 group_and_count(items, field)，按字段分组并统计数量。返回 {value: count} 字典。',
+        question: '编写函数 `group_and_count(items, field)`，按指定字段分组并统计每组数量。返回 {字段值: 数量} 的字典。\n\n**参数：** items (list) - 字典列表，field (str) - 分组字段名\n**返回：** dict - {value: count} 格式的字典\n**示例：** group_and_count([{"category": "tech"}, {"category": "tech"}, {"category": "life"}], "category") → {"tech": 2, "life": 1}',
         hint: '字典计数',
-        starterCode: 'def group_and_count(items, field):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nitems = [{\"category\": \"tech\"}, {\"category\": \"tech\"}, {\"category\": \"life\"}]\nresult = group_and_count(items, \"category\")\nprint(json.dumps(result, sort_keys=True))',
@@ -2439,9 +2439,9 @@ class PostAdmin(admin.ModelAdmin):
       },
       {
         id: 'q6-3',
-        question: '编写函数 increment_field(item, field, amount)，增加字段值。返回新值。',
+        question: '编写函数 `increment_field(item, field, amount)`，将字典中指定字段的值增加 amount，返回增加后的新值。\n\n**参数：** item (dict) - 字典对象，field (str) - 字段名，amount (int) - 增加量\n**返回：** int - 增加后的新值\n**示例：** increment_field({"views": 10}, "views", 5) → 15',
         hint: '获取当前值，加上 amount',
-        starterCode: 'def increment_field(item, field, amount):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'item = {\"views\": 10}\nresult = increment_field(item, \"views\", 5)\nprint(result)',
@@ -2452,9 +2452,9 @@ class PostAdmin(admin.ModelAdmin):
       },
       {
         id: 'q6-4',
-        question: '编写函数 find_max_by_field(items, field)，找到字段值最大的项。返回该项。',
+        question: '编写函数 `find_max_by_field(items, field)`，找到列表中指定字段值最大的项，返回该字典对象。\n\n**参数：** items (list) - 字典列表，field (str) - 比较字段名\n**返回：** dict - 字段值最大的那个字典\n**示例：** find_max_by_field([{"id": 1, "score": 85}, {"id": 2, "score": 92}], "score") → {"id": 2, "score": 92}',
         hint: '使用 max() 和 key 参数',
-        starterCode: 'def find_max_by_field(items, field):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'items = [{\"id\": 1, \"score\": 85}, {\"id\": 2, \"score\": 92}]\nresult = find_max_by_field(items, \"score\")\nprint(result[\"id\"])',
@@ -2465,9 +2465,9 @@ class PostAdmin(admin.ModelAdmin):
       },
       {
         id: 'q6-5',
-        question: '编写函数 build_query_filter(filters)，从字典构建 ORM 查询字符串。例如：{\"status\": \"published\", \"views__gte\": 100} → \"status=published&views__gte=100\"',
+        question: '编写函数 `build_query_filter(filters)`，从过滤字典构建 Django ORM 查询字符串。用 & 连接各个键值对。\n\n**参数：** filters (dict) - 过滤条件字典\n**返回：** str - 查询字符串，格式 "key1=value1&key2=value2"\n**示例：** build_query_filter({"status": "published", "views__gte": 100}) → "status=published&views__gte=100"（顺序可能不同）',
         hint: '遍历字典，用 & 连接',
-        starterCode: 'def build_query_filter(filters):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = build_query_filter({\"status\": \"published\"})\nprint(result)',
@@ -2670,9 +2670,9 @@ urlpatterns = [
     quiz: [
       {
         id: 'q7-1',
-        question: '编写函数 serialize_dict(data, fields)，只保留指定字段。data 是字典，fields 是字段列表。',
+        question: '编写函数 `serialize_dict(data, fields)`，从字典中只保留指定字段，返回新字典。\n\n**参数：** data (dict) - 源字典，fields (list) - 要保留的字段名列表\n**返回：** dict - 只包含指定字段的新字典\n**示例：** serialize_dict({"id": 1, "name": "Tom", "age": 20}, ["id", "name"]) → {"id": 1, "name": "Tom"}',
         hint: '字典推导式',
-        starterCode: 'def serialize_dict(data, fields):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\ndata = {\"id\": 1, \"name\": \"Tom\", \"age\": 20}\nresult = serialize_dict(data, [\"id\", \"name\"])\nprint(json.dumps(result, sort_keys=True))',
@@ -2683,9 +2683,9 @@ urlpatterns = [
       },
       {
         id: 'q7-2',
-        question: '编写函数 validate_required(data, required_fields)，检查必需字段是否都存在。返回 True/False。',
+        question: '编写函数 `validate_required(data, required_fields)`，检查字典中是否包含所有必需字段。全部存在返回 True，否则返回 False。\n\n**参数：** data (dict) - 数据字典，required_fields (list) - 必需字段名列表\n**返回：** bool - 所有字段都存在返回 True\n**示例：** validate_required({"name": "Tom", "age": 20}, ["name", "age"]) → True，validate_required({"name": "Tom"}, ["name", "age"]) → False',
         hint: '使用 all() 和生成器',
-        starterCode: 'def validate_required(data, required_fields):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = validate_required({\"name\": \"Tom\", \"age\": 20}, [\"name\", \"age\"])\nprint(result)',
@@ -2701,9 +2701,9 @@ urlpatterns = [
       },
       {
         id: 'q7-3',
-        question: '编写函数 build_error_response(field, message)，构建错误响应。返回 {\"field\": [\"message\"]}。',
+        question: '编写函数 `build_error_response(field, message)`，构建 DRF 风格的错误响应字典。返回格式：{"字段名": ["错误消息"]}。\n\n**参数：** field (str) - 字段名，message (str) - 错误消息\n**返回：** dict - 格式为 {field: [message]} 的字典，注意 message 要放在列表中\n**示例：** build_error_response("title", "This field is required") → {"title": ["This field is required"]}',
         hint: '创建嵌套字典，值是列表',
-        starterCode: 'def build_error_response(field, message):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nresult = build_error_response(\"title\", \"This field is required\")\nprint(json.dumps(result, sort_keys=True))',
@@ -2714,9 +2714,9 @@ urlpatterns = [
       },
       {
         id: 'q7-4',
-        question: '编写函数 extract_nested_field(data, path)，提取嵌套字段。path 是点分隔的字符串，如 \"author.username\"。',
+        question: '编写函数 `extract_nested_field(data, path)`，从嵌套字典中提取字段。path 是点分隔的字符串路径，如 "author.username"。\n\n**参数：** data (dict) - 嵌套字典，path (str) - 点分隔的字段路径\n**返回：** any - 提取到的值\n**示例：** extract_nested_field({"author": {"username": "john"}}, "author.username") → "john"',
         hint: '分割 path，逐层访问',
-        starterCode: 'def extract_nested_field(data, path):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'data = {\"author\": {\"username\": \"john\"}}\nresult = extract_nested_field(data, \"author.username\")\nprint(result)',
@@ -2727,9 +2727,9 @@ urlpatterns = [
       },
       {
         id: 'q7-5',
-        question: '编写函数 paginate_data(items, page, page_size)，返回分页后的数据和元数据。返回 {\"results\": [...], \"count\": total, \"page\": page}。',
+        question: '编写函数 `paginate_data(items, page, page_size)`，对列表进行分页并返回分页数据和元信息。\n\n**参数：** items (list) - 数据列表，page (int) - 页码（从1开始），page_size (int) - 每页条数\n**返回：** dict - {"results": [...], "count": 总数, "page": 当前页}\n**示例：** paginate_data(list(range(1, 26)), 2, 10) → {"results": [11-20], "count": 25, "page": 2}',
         hint: '切片 + 构建字典',
-        starterCode: 'def paginate_data(items, page, page_size):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nitems = list(range(1, 26))\nresult = paginate_data(items, 2, 10)\nprint(json.dumps({\"count\": result[\"count\"], \"page\": result[\"page\"], \"results_len\": len(result[\"results\"])}, sort_keys=True))',
@@ -2876,9 +2876,13 @@ REST_FRAMEWORK = {
     quiz: [
       {
         id: 'q8-1',
-        question: '编写函数 generate_token(length)，生成指定长度的随机 Token（大小写字母+数字）。',
+        question: '编写函数 `generate_token(length)`，生成指定长度的随机 Token，由大小写字母和数字组成。
+
+**参数：** length (int) - Token 长度
+**返回：** str - 随机生成的 Token
+**示例：** generate_token(32) → 返回32位随机字符串',
         hint: '使用 random.choices 和 string 模块',
-        starterCode: 'import random\nimport string\n\ndef generate_token(length):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'token = generate_token(32)\nprint(len(token))',
@@ -2889,9 +2893,13 @@ REST_FRAMEWORK = {
       },
       {
         id: 'q8-2',
-        question: '编写函数 check_permission(user_role, required_role)，检查权限。角色优先级：admin > editor > user。',
+        question: '编写函数 `check_permission(user_role, required_role)`，检查用户角色是否满足所需权限。优先级：admin > editor > user。
+
+**参数：** user_role (str) - 用户角色，required_role (str) - 所需角色
+**返回：** bool - 用户权限足够返回 True
+**示例：** check_permission(\"admin\", \"editor\") → True',
         hint: '使用字典映射优先级',
-        starterCode: 'def check_permission(user_role, required_role):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = check_permission(\"admin\", \"editor\")\nprint(result)',
@@ -2907,9 +2915,9 @@ REST_FRAMEWORK = {
       },
       {
         id: 'q8-3',
-        question: '编写函数 parse_auth_header(header)，从 \"Token abcdef123456\" 提取 token。格式错误返回 None。',
+        question: '编写函数 `parse_auth_header`(header)，从 \"Token abcdef123456\" 提取 token。格式错误返回 None。',
         hint: '检查前缀，分割字符串',
-        starterCode: 'def parse_auth_header(header):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = parse_auth_header(\"Token abc123\")\nprint(result)',
@@ -2925,9 +2933,13 @@ REST_FRAMEWORK = {
       },
       {
         id: 'q8-4',
-        question: '编写函数 check_rate_limit(requests_count, limit, window)，检查是否超过速率限制。返回 True（允许）或 False（拒绝）。',
+        question: '编写函数 `check_rate_limit(requests_count, limit, window)`，检查请求是否超过速率限制。
+
+**参数：** requests_count (int) - 已发送请求数，limit (int) - 限制数，window (str) - 时间窗口（可忽略）
+**返回：** bool - 未超限返回 True，超限返回 False
+**示例：** check_rate_limit(50, 100, \"hour\") → True',
         hint: '比较 requests_count 和 limit',
-        starterCode: 'def check_rate_limit(requests_count, limit, window):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = check_rate_limit(50, 100, \"hour\")\nprint(result)',
@@ -2943,9 +2955,9 @@ REST_FRAMEWORK = {
       },
       {
         id: 'q8-5',
-        question: '编写函数 build_action_url(base_url, resource, pk, action)，构建自定义动作 URL。格式：\"{base_url}/{resource}/{pk}/{action}/\"',
+        question: '编写函数 `build_action_url`(base_url, resource, pk, action)，构建自定义动作 URL。格式：\"{base_url}/{resource}/{pk}/{action}/\"',
         hint: '使用 f-string 拼接',
-        starterCode: 'def build_action_url(base_url, resource, pk, action):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = build_action_url(\"http://api.com\", \"posts\", 123, \"publish\")\nprint(result)',
@@ -3101,9 +3113,9 @@ class PostViewSet(viewsets.ModelViewSet):
     quiz: [
       {
         id: 'q9-1',
-        question: '编写函数 apply_filters(items, filters)，应用多个过滤器。filters 是 {field: value} 字典。返回匹配的项。',
+        question: '编写函数 `apply_filters(items, filters)`，对字典列表应用多个过滤条件，返回所有匹配的项。\n\n**参数：** items (list) - 字典列表，filters (dict) - 过滤条件 {字段: 值}\n**返回：** list - 满足所有过滤条件的项列表\n**示例：** apply_filters([{"status": "active", "views": 100}], {"status": "active"}) → 返回1个项',
         hint: '遍历 filters，检查每个条件',
-        starterCode: 'def apply_filters(items, filters):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'items = [{\"status\": \"active\", \"views\": 100}, {\"status\": \"inactive\", \"views\": 50}]\nresult = apply_filters(items, {\"status\": \"active\"})\nprint(len(result))',
@@ -3114,9 +3126,9 @@ class PostViewSet(viewsets.ModelViewSet):
       },
       {
         id: 'q9-2',
-        question: '编写函数 search_items(items, query, search_fields)，在多个字段中搜索（不区分大小写）。',
+        question: '编写函数 `search_items(items, query, search_fields)`，在指定字段中搜索包含query的项（不区分大小写）。\n\n**参数：** items (list) - 字典列表，query (str) - 搜索词，search_fields (list) - 要搜索的字段名列表\n**返回：** list - 在任意搜索字段中包含query的项\n**示例：** search_items([{"title": "Python"}], "python", ["title"]) → 返回1个项',
         hint: '检查 query 是否在任何 search_field 中',
-        starterCode: 'def search_items(items, query, search_fields):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'items = [{\"title\": \"Python\", \"content\": \"Learn\"}, {\"title\": \"Java\", \"content\": \"Code\"}]\nresult = search_items(items, \"python\", [\"title\", \"content\"])\nprint(len(result))',
@@ -3127,9 +3139,9 @@ class PostViewSet(viewsets.ModelViewSet):
       },
       {
         id: 'q9-3',
-        question: '编写函数 create_pagination_response(items, page, page_size)，创建分页响应。返回 {\"count\": total, \"results\": page_items, \"next\": has_next, \"previous\": has_previous}。',
+        question: '编写函数 `create_pagination_response(items, page, page_size)`，创建完整的分页响应。\n\n**参数：** items (list) - 数据列表，page (int) - 页码（从1开始），page_size (int) - 每页条数\n**返回：** dict - {"count": 总数, "results": 当前页数据, "next": 是否有下一页, "previous": 是否有上一页}\n**示例：** create_pagination_response(list(range(1,26)), 2, 10) → {"count": 25, "next": true, "previous": true, ...}',
         hint: '计算是否有上一页/下一页',
-        starterCode: 'def create_pagination_response(items, page, page_size):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nitems = list(range(1, 26))\nresult = create_pagination_response(items, 2, 10)\nprint(json.dumps({\"count\": result[\"count\"], \"has_next\": result[\"next\"], \"has_previous\": result[\"previous\"]}, sort_keys=True))',
@@ -3140,9 +3152,9 @@ class PostViewSet(viewsets.ModelViewSet):
       },
       {
         id: 'q9-4',
-        question: '编写函数 nest_related_data(parent, children, child_key)，将子数据嵌套到父数据中。',
+        question: '编写函数 `nest_related_data(parent, children, child_key)`，将子数据嵌套到父数据字典中。\n\n**参数：** parent (dict) - 父数据，children (list) - 子数据列表，child_key (str) - 嵌套字段名\n**返回：** dict - 包含原parent数据 + {child_key: children} 的新字典\n**示例：** nest_related_data({"id": 1}, [{"id": 1}, {"id": 2}], "comments") → {"id": 1, "comments": [...]}',
         hint: '复制 parent，添加 child_key',
-        starterCode: 'def nest_related_data(parent, children, child_key):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nparent = {\"id\": 1, \"title\": \"Post\"}\nchildren = [{\"id\": 1}, {\"id\": 2}]\nresult = nest_related_data(parent, children, \"comments\")\nprint(json.dumps(result, sort_keys=True))',
@@ -3153,9 +3165,9 @@ class PostViewSet(viewsets.ModelViewSet):
       },
       {
         id: 'q9-5',
-        question: '编写函数 calculate_offset(page, page_size)，计算分页偏移量。page 从 1 开始。',
+        question: '编写函数 `calculate_offset(page, page_size)`，计算数据库查询的分页偏移量。页码从 1 开始。\n\n**参数：** page (int) - 页码（从1开始），page_size (int) - 每页条数\n**返回：** int - 偏移量\n**公式：** offset = (page - 1) * page_size\n**示例：** calculate_offset(3, 10) → 20，calculate_offset(1, 10) → 0',
         hint: 'offset = (page - 1) * page_size',
-        starterCode: 'def calculate_offset(page, page_size):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = calculate_offset(3, 10)\nprint(result)',
@@ -3323,9 +3335,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
     quiz: [
       {
         id: 'q10-1',
-        question: '编写函数 assert_status(actual, expected)，模拟测试断言。相等返回 \"PASS\"，否则返回 \"FAIL: expected {expected}, got {actual}\"。',
+        question: '编写函数 `assert_status`(actual, expected)，模拟测试断言。相等返回 \"PASS\"，否则返回 \"FAIL: expected {expected}, got {actual}\"。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '条件判断 + f-string',
-        starterCode: 'def assert_status(actual, expected):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = assert_status(200, 200)\nprint(result)',
@@ -3341,9 +3353,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q10-2',
-        question: '编写函数 build_error_dict(code, message)，构建错误响应。返回 {\"error\": {\"code\": code, \"message\": message}}。',
+        question: '编写函数 `build_error_dict`(code, message)，构建错误响应。返回 {\"error\": {\"code\": code, \"message\": message}}。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '嵌套字典',
-        starterCode: 'def build_error_dict(code, message):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nresult = build_error_dict(\"not_found\", \"Resource not found\")\nprint(json.dumps(result, sort_keys=True))',
@@ -3354,9 +3366,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q10-3',
-        question: '编写函数 count_test_results(results)，统计测试结果。results 是 \"PASS\"/\"FAIL\" 列表。返回 {\"passed\": x, \"failed\": y, \"total\": z}。',
+        question: '编写函数 `count_test_results`(results)，统计测试结果。results 是 \"PASS\"/\"FAIL\" 列表。返回 {\"passed\": x, \"failed\": y, \"total\": z}。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '遍历列表计数',
-        starterCode: 'def count_test_results(results):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nresults = [\"PASS\", \"PASS\", \"FAIL\", \"PASS\"]\nresult = count_test_results(results)\nprint(json.dumps(result, sort_keys=True))',
@@ -3367,9 +3379,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q10-4',
-        question: '编写函数 generate_api_url(base, version, resource)，生成 API URL。格式：\"{base}/api/{version}/{resource}/\"',
+        question: '编写函数 `generate_api_url`(base, version, resource)，生成 API URL。格式：\"{base}/api/{version}/{resource}/\"\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: 'f-string 拼接',
-        starterCode: 'def generate_api_url(base, version, resource):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = generate_api_url(\"http://example.com\", \"v1\", \"posts\")\nprint(result)',
@@ -3380,9 +3392,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q10-5',
-        question: '编写函数 validate_response_structure(response, required_keys)，验证响应是否包含所有必需键。返回 True/False。',
+        question: '编写函数 `validate_response_structure`(response, required_keys)，验证响应是否包含所有必需键。返回 True/False。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用 all() 检查所有键',
-        starterCode: 'def validate_response_structure(response, required_keys):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'response = {\"id\": 1, \"title\": \"Test\", \"content\": \"Text\"}\nresult = validate_response_structure(response, [\"id\", \"title\"])\nprint(result)',
@@ -3407,9 +3419,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
     quiz: [
       {
         id: 'q11-1',
-        question: '编写函数 calculate_avg(numbers)，计算平均值，返回保留2位小数的浮点数。',
+        question: '编写函数 `calculate_avg`(numbers)，计算平均值，返回保留2位小数的浮点数。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用 sum() 和 len()',
-        starterCode: 'def calculate_avg(numbers):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = calculate_avg([1, 2, 3, 4, 5])\nprint(result)',
@@ -3425,9 +3437,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q11-2',
-        question: '编写函数 group_by_status(items)，按 status 字段分组。items 是字典列表。返回 {status: [items]} 字典。',
+        question: '编写函数 `group_by_status`(items)，按 status 字段分组。items 是字典列表。返回 {status: [items]} 字典。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '遍历items，使用字典存储分组',
-        starterCode: 'def group_by_status(items):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nitems = [{"id": 1, "status": "active"}, {"id": 2, "status": "active"}, {"id": 3, "status": "inactive"}]\nresult = group_by_status(items)\nprint(json.dumps({k: len(v) for k, v in result.items()}, sort_keys=True))',
@@ -3438,9 +3450,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q11-3',
-        question: '编写函数 filter_published(items)，过滤 status 为 "published" 的项。',
+        question: '编写函数 `filter_published`(items)，过滤 status 为 "published" 的项。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '列表推导式',
-        starterCode: 'def filter_published(items):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'items = [{"id": 1, "status": "published"}, {"id": 2, "status": "draft"}]\nresult = filter_published(items)\nprint(len(result))',
@@ -3451,9 +3463,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q11-4',
-        question: '编写函数 count_by_field(items, field)，统计字段值出现次数。',
+        question: '编写函数 `count_by_field`(items, field)，统计字段值出现次数。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '字典计数',
-        starterCode: 'def count_by_field(items, field):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nitems = [{"type": "A"}, {"type": "B"}, {"type": "A"}]\nresult = count_by_field(items, "type")\nprint(json.dumps(result, sort_keys=True))',
@@ -3464,9 +3476,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q11-5',
-        question: '编写函数 get_top_n(items, field, n)，按字段值降序返回前 n 项。',
+        question: '编写函数 `get_top_n`(items, field, n)，按字段值降序返回前 n 项。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用 sorted() 和切片',
-        starterCode: 'def get_top_n(items, field, n):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'items = [{"score": 85}, {"score": 92}, {"score": 78}]\nresult = get_top_n(items, "score", 2)\nprint(len(result))',
@@ -3486,9 +3498,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
     quiz: [
       {
         id: 'q12-1',
-        question: '编写函数 build_url(base, path, params)，构建完整 URL。例如：base="http://api.com", path="/users", params={"page": 1} → "http://api.com/users?page=1"',
+        question: '编写函数 `build_url`(base, path, params)，构建完整 URL。例如：base="http://api.com", path="/users", params={"page": 1} → "http://api.com/users?page=1"。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '拼接字符串',
-        starterCode: 'def build_url(base, path, params):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = build_url("http://api.com", "/users", {"page": "1"})\nprint(result)',
@@ -3499,9 +3511,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q12-2',
-        question: '编写函数 parse_response(response)，从 response 字典提取 data 字段，如果不存在返回空列表。',
+        question: '编写函数 `parse_response`(response)，从 response 字典提取 data 字段，如果不存在返回空列表。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用 get() 方法',
-        starterCode: 'def parse_response(response):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = parse_response({"data": [1, 2, 3]})\nprint(result)',
@@ -3517,9 +3529,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q12-3',
-        question: '编写函数 search_by_keyword(items, keyword, field)，在指定字段中搜索关键词（不区分大小写）。',
+        question: '编写函数 `search_by_keyword`(items, keyword, field)，在指定字段中搜索关键词（不区分大小写）。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用 lower() 和 in',
-        starterCode: 'def search_by_keyword(items, keyword, field):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'items = [{"title": "Python Guide"}, {"title": "Java Book"}]\nresult = search_by_keyword(items, "python", "title")\nprint(len(result))',
@@ -3530,9 +3542,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q12-4',
-        question: '编写函数 sort_by_field(items, field, reverse)，按字段排序。',
+        question: '编写函数 `sort_by_field`(items, field, reverse)，按字段排序。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用 sorted() 的 key 和 reverse 参数',
-        starterCode: 'def sort_by_field(items, field, reverse=False):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'items = [{"score": 85}, {"score": 92}]\nresult = sort_by_field(items, "score", True)\nprint(result[0]["score"])',
@@ -3543,9 +3555,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q12-5',
-        question: '编写函数 paginate_list(items, page, size)，实现分页。返回指定页的数据。',
+        question: '编写函数 `paginate_list`(items, page, size)，实现分页。返回指定页的数据。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '计算起始索引：(page - 1) * size',
-        starterCode: 'def paginate_list(items, page, size):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'items = list(range(1, 21))\nresult = paginate_list(items, 2, 5)\nprint(result)',
@@ -3565,9 +3577,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
     quiz: [
       {
         id: 'q13-1',
-        question: '编写函数 can_transition(current_state, new_state, rules)，检查状态转换是否合法。rules 是 {state: [allowed_states]} 字典。',
+        question: '编写函数 `can_transition`(current_state, new_state, rules)，检查状态转换是否合法。rules 是 {state: [allowed_states]} 字典。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '检查 new_state 是否在 rules[current_state] 中',
-        starterCode: 'def can_transition(current_state, new_state, rules):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'rules = {"draft": ["submitted"], "submitted": ["approved", "rejected"]}\nresult = can_transition("draft", "submitted", rules)\nprint(result)',
@@ -3583,9 +3595,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q13-2',
-        question: '编写函数 check_permission(user_role, action, permissions)，检查角色是否有权限执行操作。permissions 是 {role: [actions]} 字典。',
+        question: '编写函数 `check_permission`(user_role, action, permissions)，检查角色是否有权限执行操作。permissions 是 {role: [actions]} 字典。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '检查 action 是否在 permissions[user_role] 中',
-        starterCode: 'def check_permission(user_role, action, permissions):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'perms = {"admin": ["create", "delete"], "user": ["create"]}\nresult = check_permission("admin", "delete", perms)\nprint(result)',
@@ -3601,9 +3613,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q13-3',
-        question: '编写函数 validate_quota(current_count, limit)，检查是否超过配额。返回 True（未超过）或 False（已超过）。',
+        question: '编写函数 `validate_quota`(current_count, limit)，检查是否超过配额。返回 True（未超过）或 False（已超过）。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '比较 current_count 和 limit',
-        starterCode: 'def validate_quota(current_count, limit):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = validate_quota(5, 10)\nprint(result)',
@@ -3619,9 +3631,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q13-4',
-        question: '编写函数 create_notification(user_id, message, type)，创建通知字典。包含 user_id、message、type 和 timestamp（使用 "2024-01-01" 作为固定值）。',
+        question: '编写函数 `create_notification`(user_id, message, type)，创建通知字典。包含 user_id、message、type 和 timestamp（使用 "2024-01-01" 作为固定值）。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '返回包含四个键的字典',
-        starterCode: 'def create_notification(user_id, message, type):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nresult = create_notification(1, "Hello", "info")\nprint(json.dumps(result, sort_keys=True))',
@@ -3632,9 +3644,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q13-5',
-        question: '编写函数 filter_by_date_range(items, date_field, start, end)，过滤日期在范围内的项。日期格式：YYYY-MM-DD。',
+        question: '编写函数 `filter_by_date_range`(items, date_field, start, end)，过滤日期在范围内的项。日期格式：YYYY-MM-DD。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用字符串比较',
-        starterCode: 'def filter_by_date_range(items, date_field, start, end):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'items = [{"date": "2024-01-05"}, {"date": "2024-01-15"}]\nresult = filter_by_date_range(items, "date", "2024-01-01", "2024-01-10")\nprint(len(result))',
@@ -3654,9 +3666,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
     quiz: [
       {
         id: 'q14-1',
-        question: '编写函数 calculate_cache_key(prefix, id)，生成缓存键。格式："{prefix}:{id}"',
+        question: '编写函数 `calculate_cache_key`(prefix, id)，生成缓存键。格式："{prefix}:{id}"\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用 f-string',
-        starterCode: 'def calculate_cache_key(prefix, id):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = calculate_cache_key("user", 123)\nprint(result)',
@@ -3667,9 +3679,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q14-2',
-        question: '编写函数 should_refresh_cache(last_updated, ttl)，判断是否需要刷新缓存。last_updated 和 ttl 都是秒数。如果距上次更新超过 ttl 返回 True。',
+        question: '编写函数 `should_refresh_cache`(last_updated, ttl)，判断是否需要刷新缓存。last_updated 和 ttl 都是秒数。如果距上次更新超过 ttl 返回 True。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '比较时间差',
-        starterCode: 'def should_refresh_cache(last_updated, ttl):\n    # last_updated 是时间戳秒数\n    # ttl 是过期时间秒数\n    # 模拟：如果 last_updated < ttl 返回 True\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = should_refresh_cache(100, 200)\nprint(result)',
@@ -3685,9 +3697,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q14-3',
-        question: '编写函数 calculate_rate_limit_key(user_id, window)，生成限流键。格式："ratelimit:{user_id}:{window}"',
+        question: '编写函数 `calculate_rate_limit_key`(user_id, window)，生成限流键。格式："ratelimit:{user_id}:{window}"\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用 f-string 拼接',
-        starterCode: 'def calculate_rate_limit_key(user_id, window):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = calculate_rate_limit_key(123, "hour")\nprint(result)',
@@ -3698,9 +3710,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q14-4',
-        question: '编写函数 batch_process(items, batch_size)，将items分批。返回批次列表。',
+        question: '编写函数 `batch_process`(items, batch_size)，将items分批。返回批次列表。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用切片和循环',
-        starterCode: 'def batch_process(items, batch_size):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = batch_process(list(range(1, 11)), 3)\nprint(len(result))',
@@ -3711,9 +3723,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q14-5',
-        question: '编写函数 generate_secret_key(length)，生成随机密钥（大小写字母+数字）。',
+        question: '编写函数 `generate_secret_key`(length)，生成随机密钥（大小写字母+数字）。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用 random 和 string 模块',
-        starterCode: 'import random\nimport string\n\ndef generate_secret_key(length):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'key = generate_secret_key(32)\nprint(len(key))',
@@ -3733,9 +3745,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
     quiz: [
       {
         id: 'q15-1',
-        question: '编写函数 summarize_course(lessons_completed, total_lessons)，计算完成百分比（保留整数）。',
+        question: '编写函数 `summarize_course`(lessons_completed, total_lessons)，计算完成百分比（保留整数）。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '计算比例并转换为百分比',
-        starterCode: 'def summarize_course(lessons_completed, total_lessons):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = summarize_course(15, 15)\nprint(result)',
@@ -3751,9 +3763,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q15-2',
-        question: '编写函数 create_certificate(name, course, date)，创建证书数据字典。',
+        question: '编写函数 `create_certificate`(name, course, date)，创建证书数据字典。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '返回包含三个键的字典',
-        starterCode: 'def create_certificate(name, course, date):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'import json\nresult = create_certificate("Tom", "Python", "2024-01-01")\nprint(json.dumps(result, sort_keys=True))',
@@ -3764,9 +3776,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q15-3',
-        question: '编写函数 calculate_total_score(quiz_scores)，计算所有测验的总分。quiz_scores 是分数列表。',
+        question: '编写函数 `calculate_total_score`(quiz_scores)，计算所有测验的总分。quiz_scores 是分数列表。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用 sum() 函数',
-        starterCode: 'def calculate_total_score(quiz_scores):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = calculate_total_score([80, 90, 85, 95, 88])\nprint(result)',
@@ -3777,9 +3789,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q15-4',
-        question: '编写函数 get_skill_level(score)，根据分数返回等级："Beginner"(0-60), "Intermediate"(61-80), "Advanced"(81-100)。',
+        question: '编写函数 `get_skill_level`(score)，根据分数返回等级："Beginner"(0-60), "Intermediate"(61-80), "Advanced"(81-100)。\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用条件判断',
-        starterCode: 'def get_skill_level(score):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = get_skill_level(85)\nprint(result)',
@@ -3795,9 +3807,9 @@ CORS_ALLOWED_ORIGINS = [\"http://localhost:3000\"]
       },
       {
         id: 'q15-5',
-        question: '编写函数 generate_completion_message(name, score)，生成完成消息。格式："恭喜 {name}！你的总分是 {score} 分。"',
+        question: '编写函数 `generate_completion_message`(name, score)，生成完成消息。格式："恭喜 {name}！你的总分是 {score} 分。"\n\n**要求：** 按题目描述实现函数，注意参数类型和返回值格式。',
         hint: '使用 f-string',
-        starterCode: 'def generate_completion_message(name, score):\n    # 你的代码\n    pass\n',
+        starterCode: '',
         testCases: [
           {
             code: 'result = generate_completion_message("小明", 95)\nprint(result)',
